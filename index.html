@@ -1,55 +1,62 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-<head>
+  <head>
     <meta charset="UTF-8">
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    <title>Sample Site</title>
-</head>
+    <title>JavaScript Sample</title>
+  </head>
 
-<body>
+  <body>
+    <div id="container">
 
-  <div id="container">
+      <header id="ABC">
+        <h1>JavaScript Sample</h1>
+      </header>
 
-    <header>
-      <h1>Sample Page</h1>
-    </header>
+      <nav>
+        <ul>
+          <li>HOME</li>
+          <li>ABOUT</li>
+          <li>LINK</li>
+        <ul>
+      </nav>
 
-    <nav>
-      <ul>
-        <li><a href="#">home</a></li>
-        <li><a href="#">about</a></li>
-        <li><a href="#">gallery</a></li>
-        <li><a href="#">links</a></li>
-      </ul>
-    </nav>
+      <article>
+        <button onClick="MyFunction()" >Click Me!</button>
+        <button onClick="MyFunction2()" >Click Me!</button>
+        <button onClick="MyFunction3()" >Click Me!</button>
+        <ul>
+          <li class="line">A</li>
+          <li class="line">B</li>
+          <li class="line">C</li>
+          <li class="line">D</li>
+          <li class="line">E</li>
+          <li class="line">F</li>
+          <li class="line">G</li>
+          <li class="line">H</li>
+          <li class="line">I</li>
+          <li class="line">J</li>
+          <li class="line">K</li>
+        </ul>
+        <ul>
+           <li><button onClick="ChangeBGColor('red')">RED</button></li>
+           <li><button onClick="ChangeBGColor('green')">GREEN</button></li>
+           <li><button onClick="ChangeBGColor('blue')">BLUE</button></li>
+        </ul>
 
-    <main>
+        <button onClick="ChangeBGRandomColor()" >Click Me!</button>
 
-      <section>
 
-        <article>
-          article 01
-        </article>
+      </article>
 
-        <article>
-          article 02
-        </article>
 
-      </section>
+      <footer>
+        この領域には、署名等の情報が入ります
+      </footer>
 
-      <aside>
-        aside
-      </aside>
-
-    </main>
-
-    <footer>
-      &copy; http://www.example.com
-    </footer>
-
-  </div>
-
-</body>
+    </div>
+  </body>
 
 </html>
