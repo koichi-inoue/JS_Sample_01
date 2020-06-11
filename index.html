@@ -3,60 +3,64 @@
 
   <head>
     <meta charset="UTF-8">
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css">
     <title>JavaScript Sample</title>
+    <script src="script.js"></script>
   </head>
 
   <body>
-    <div id="container">
 
-      <header id="ABC">
-        <h1>JavaScript Sample</h1>
-      </header>
+    <header id="ABC">
+      <h1>JavaScript Sample</h1>
+    </header>
 
-      <nav>
-        <ul>
-          <li>HOME</li>
-          <li>ABOUT</li>
-          <li>LINK</li>
-        <ul>
-      </nav>
+    <article>
 
-      <article>
-        <button onClick="MyFunction()" >Click Me!</button>
-        <button onClick="MyFunction2()" >Click Me!</button>
-        <button onClick="MyFunction3()" >Click Me!</button>
-        <ul>
-          <li class="line">A</li>
-          <li class="line">B</li>
-          <li class="line">C</li>
-          <li class="line">D</li>
-          <li class="line">E</li>
-          <li class="line">F</li>
-          <li class="line">G</li>
-          <li class="line">H</li>
-          <li class="line">I</li>
-          <li class="line">J</li>
-          <li class="line">K</li>
-        </ul>
-        <ul>
-           <li><button onClick="ChangeBGColor('red')">RED</button></li>
-           <li><button onClick="ChangeBGColor('green')">GREEN</button></li>
-           <li><button onClick="ChangeBGColor('blue')">BLUE</button></li>
-        </ul>
+      <h2>事例１｜ページにアクセスする</h2>
+      <button onClick="MyFunction01()" >Click Me !</button>
 
-        <button onClick="ChangeBGRandomColor()" >Click Me!</button>
+      <h2 id="ID01">事例２｜ID要素にアクセスする</h2>
+      <button onClick="MyFunction02()" >Click Me!</button>
 
+      <h2>事例３｜CLASS要素にアクセスする</h2>
+      <button onClick="MyFunction03()" >Click Me !</button>
+      <ul>
+          <li class="Class01">A</li>
+          <li>B</li>
+          <li class="Class01">C</li>
+          <li>D</li>
+          <li class="Class01">E</li>
+          <li>F</li>
+          <li class="Class01">G</li>
+      </ul>
 
-      </article>
+      <h2>事例４｜HTML要素にアクセスする</h2>
+      <button onClick="MyFunction04()" >Click Me !</button>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and
+        typesetting industry.
+      </p>
+      <p>
+        Lorem Ipsum has been the industry's standard dummy text
+        ever since the 1500s, when an unknown printer took a
+        galley of type and scrambled it to make a type specimen book.
+      </p>
 
+      <h2>事例５｜引数の利用</h2>
+      <ul>
+         <li><button onClick="ChangeBGColor('red')">RED</button></li>
+         <li><button onClick="ChangeBGColor('green')">GREEN</button></li>
+         <li><button onClick="ChangeBGColor('blue')">BLUE</button></li>
+      </ul>
 
-      <footer>
-        この領域には、署名等の情報が入ります
-      </footer>
+      <h2>事例６｜汎用性のある関数を用意する</h2>
+      <button onClick="ChangeBGRandomColor()" >Click Me!</button>
 
-    </div>
+    </article>
+
+    <footer>
+      <p>https://www.example.com</p>
+    </footer>
+
   </body>
 
 </html>
