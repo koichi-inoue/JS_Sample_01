@@ -36,7 +36,7 @@ function MyFunction04() {
 }
 
 // 引数を用いた背景色の変更
-function ChangeBGColor( col ){
+function MyFunction05( col ){
   var obj = document.body;
   obj.style.backgroundColor = col;
 }
@@ -49,7 +49,7 @@ function RandomColor(){
     return '#' + col;
 }
 // 背景色の変更
-function ChangeBGRandomColor( ){
+function MyFunction06( ){
   var obj = document.body;
   obj.style.backgroundColor = RandomColor();
 }
